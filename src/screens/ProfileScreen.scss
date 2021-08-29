@@ -1,0 +1,96 @@
+.profileScreen {
+  height: 100vh;
+  color: #fff;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 8%;
+    max-width: 800px;
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      border-bottom: 1px solid #282c2d;
+      margin-bottom: 20px;
+    }
+  }
+  &__info {
+    display: flex;
+
+    img {
+      height: 100px;
+    }
+  }
+  &__details {
+    color: #fff;
+    margin-left: 25px;
+    flex: 1;
+    h2 {
+      background-color: gray;
+      padding: 15px;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+  }
+  &__plans {
+    margin-top: 20px;
+    h3 {
+      border-bottom: 1px solid #282c2d;
+      padding-bottom: 10px;
+    }
+  }
+  &__signOut {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+
+  .packages {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 2rem;
+
+    .package {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 0.75;
+      transition: all 0.2s;
+      //   text-shadow: 0 0px 1px rgba(225, 225, 225, 1);
+
+      h5 {
+        font-size: 15px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .subscribe {
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 15px;
+        background-color: #e50914;
+        // border-radius: 5px;
+        font-weight: 600;
+        border: none;
+
+        &__premium {
+          background-color: gray;
+        }
+      }
+    }
+    .package:hover {
+      opacity: 1;
+      color: white;
+    }
+  }
+}
